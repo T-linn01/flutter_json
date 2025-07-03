@@ -20,6 +20,9 @@ void main() {
   print('Còn hàng: ${myBook.isAvailable}');
   print(myBook);
 
+  final updatedBook = myBook.copyWith(title: "Lão Hạc - Tái bản");
+  print(myBook == updatedBook);
+
   runApp(MyApp(book: myBook));
 }
 
